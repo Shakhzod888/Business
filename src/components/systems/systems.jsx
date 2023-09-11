@@ -28,7 +28,7 @@ function Systems() {
 
   return (
     <>
-      <section className="section_1">
+      <section className="section_1" id="home">
         <div
           onClick={(e) => {
             setOpenBurger(false);
@@ -37,9 +37,9 @@ function Systems() {
           className={`open_menu_burger ${openBurger ? "" : "displayNone"}`}
         >
           <div className="burger_links">
-            <a href="/home">Home</a>
-            <a href="/about">About</a>
-            <a href="/contact">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
           </div>
         </div>
 
@@ -48,13 +48,13 @@ function Systems() {
             <p>Landing Page</p>
             <ul className="header_links">
               <li className="header_link activeLink">
-                <a href="/">Home</a>
+                <a href="#home">Home</a>
               </li>
               <li className="header_link">
-                <a href="/">About</a>
+                <a href="#about">About</a>
               </li>
               <li className="header_link">
-                <a href="/">Contact</a>
+                <a href="#services">Services</a>
               </li>
               <Burger
                 color="#fff"

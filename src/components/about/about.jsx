@@ -7,7 +7,7 @@ import Person_4 from "../assets/People 4.png";
 
 function About() {
   return (
-    <div className="section_2">
+    <div className="section_2" id="about">
       <div className="container section_2_container">
         <p className="text_about">About us</p>
         <div className="about_container">

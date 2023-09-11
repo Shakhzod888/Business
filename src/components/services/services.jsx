@@ -9,7 +9,7 @@ import Proximity from "../assets/Proximity Sensor.png";
 
 function Services() {
   return (
-    <div className="section_3">
+    <div className="section_3" id="services">
       <div className="container section_3_container">
         <p className="text_about">Our Services</p>
         <div className="services_category">
