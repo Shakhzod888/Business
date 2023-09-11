@@ -3,6 +3,43 @@
   width: 100%;
   height: 135vh;
   background-color: #0f3d3e;
+  position: relative;
+
+  .open_menu_burger {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.9;
+
+    .burger_links {
+      text-align: center;
+      gap: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+
+      a {
+        text-align: center;
+        height: 45px;
+        width: 130px;
+        border: solid 2px white;
+        color: #fff;
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .displayNone {
+    display: none;
+  }
+
+  .displayBlock {
+    display: block;
+  }
 
   .header_box {
     display: flex;
@@ -36,6 +73,12 @@
           text-decoration: none;
           color: #fff;
           font-size: 1.3rem;
+
+          &:hover {
+            text-decoration: underline;
+            color: #fff;
+            transition: all 9s linear;
+          }
         }
       }
     }
@@ -43,7 +86,7 @@
 
   .activeLink {
     text-decoration: underline;
-    color: #fff;
+    color: red;
   }
 
   .section_1_container {
@@ -80,7 +123,6 @@
         flex-shrink: 0;
         border-radius: 25px;
         background: #e2dcc8;
-        backdrop-filter: blur(2px);
         color: #0f3d3e;
         font-size: 20px;
         font-style: normal;
@@ -91,7 +133,7 @@
     }
 
     .systemTypes {
-      margin-top: 50px;
+      margin-top: 40px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -174,40 +216,132 @@
     }
   }
 
-  @media only screen and (max-width: 1124px) {
+  @media only screen and (max-width: 1130px) {
     height: auto;
     padding-bottom: 20px;
-  }
 
-  @media only screen and (max-width: 958px) {
-    height: auto;
-    padding-bottom: 30px;
     .system_boxes {
       gap: 40px;
+      .system_box {
+        max-width: 280px;
+        width: 280px;
+        height: 280px;
+        .boxess_box {
+          width: 200px;
+          height: 200px;
+          margin-bottom: 10px;
+
+          span {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 958px) {
+    .system_boxes {
+      gap: 40px;
+      .system_box {
+        max-width: 250px;
+        width: 250px;
+        height: 280px;
+
+        .boxess_box {
+          width: 200px;
+          height: 200px;
+
+          span {
+            font-size: 12px;
+          }
+        }
+      }
     }
   }
 
-  @media only screen and (max-width: 754px) {
-    height: auto;
-    padding-bottom: 30px;
-
-    .section_1_container {
-      text-align: center;
-    }
-
-    .system_boxes {
-      gap: 10px;
-      margin-top: 20px;
-    }
-
+  @media only screen and (max-width: 900px) {
     .header_box {
-      padding: 20px 60px;
+      padding: 20px 70px;
     }
+    .system_boxes {
+      gap: 40px;
+      .system_box {
+        max-width: 230px;
+        width: 230px;
+        height: 250px;
+
+        .boxess_box {
+          width: 180px;
+          height: 180px;
+
+          span {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .section_1_container {
+      .systemText {
+        p {
+          width: 400px;
+          font-size: 17px;
+        }
+      }
+      .systemTypes {
+        gap: 0;
+        .system_container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .systemTypeImg {
+            padding: 10px;
+          }
+          .system_container_body {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .system_duble {
+              display: flex;
+              gap: 120px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
     .section_1_container {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
+
+      .systemText {
+        p {
+          max-width: 500px;
+          width: 500px;
+          font-size: 19px;
+        }
+      }
+
+      .systemTypes {
+        gap: 0;
+        .system_container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .systemTypeImg {
+            padding: 15px;
+          }
+          .system_container_body {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            .system_duble {
+              display: flex;
+              gap: 140px;
+            }
+          }
+        }
+      }
     }
   }
 
@@ -217,6 +351,34 @@
 
     .section_1_container {
       text-align: center;
+
+      .systemText {
+        p {
+          max-width: 400px;
+          width: 400px;
+          font-size: 15px;
+          padding: 0;
+          margin: 0;
+        }
+      }
+
+      .systemTypes {
+        gap: 0;
+        .system_container {
+          .systemTypeImg {
+            padding: 15px;
+          }
+          .system_container_body {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .system_duble {
+              display: flex;
+              gap: 135px;
+            }
+          }
+        }
+      }
     }
 
     .header_box {
@@ -232,24 +394,71 @@
     }
   }
 
-  @media only screen and (max-width: 458px) {
+  @media only screen and (min-width: 574px) {
+    .open_menu_burger {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .system_boxes {
+      gap: 40px;
+      .system_box {
+        max-width: 260px;
+        width: 260px;
+        height: 280px;
+
+        .boxess_box {
+          width: 180px;
+          height: 180px;
+
+          span {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 460px) {
     height: auto;
     padding-bottom: 30px;
 
     .section_1_container {
       .systemText {
-        padding: 0px 30px;
+        p {
+          padding-top: 10px;
+          max-width: 300px;
+          width: 300px;
+          font-size: 13px;
+        }
+      }
+      .systemTypes {
+        gap: 0;
+        .system_container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .systemTypeImg {
+            padding: 15px;
+          }
+          .system_container_body {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            .system_duble {
+              display: flex;
+              gap: 140px;
+            }
+          }
+        }
       }
     }
   }
 
   @media only screen and (max-width: 375px) {
-    .section_1_container {
-      .systemTypes {
-        .systemTypeImg {
-          padding: 5px;
-        }
-      }
+    .header_box {
+      padding: 20px 40px;
     }
   }
 }

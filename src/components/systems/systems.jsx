@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Burger } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import "../systems/systems.scss";
@@ -8,16 +8,44 @@ import Sensor from "../assets/Sensor.png";
 import Light from "../assets/Light.png";
 import Medical from "../assets/Medical.png";
 import Game from "../assets/Game.png";
+import { keyboard } from "@testing-library/user-event/dist/keyboard";
 
 function Systems() {
   const [opened, { toggle }] = useDisclosure(false);
   const label = opened ? "Close navigation" : "Open navigation";
+  const [openBurger, setOpenBurger] = useState(false);
+
+  const controlBurger = (e) => {
+    setOpenBurger(!openBurger);
+  };
+
+  document.addEventListener("keydown", function (event) {
+    console.log(event.key);
+    if (event.key === "Escape") {
+      setOpenBurger(false);
+    }
+  });
+
   return (
     <>
       <section className="section_1">
+        <div
+          onClick={(e) => {
+            setOpenBurger(false);
+            toggle();
+          }}
+          className={`open_menu_burger ${openBurger ? "" : "displayNone"}`}
+        >
+          <div className="burger_links">
+            <a href="/home">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+          </div>
+        </div>
+
         <header className="section_1_header">
           <div className="header_box">
-            <p>Lading Page</p>
+            <p>Landing Page</p>
             <ul className="header_links">
               <li className="header_link activeLink">
                 <a href="/">Home</a>
@@ -32,7 +60,10 @@ function Systems() {
                 color="#fff"
                 className="burgerBtn"
                 opened={opened}
-                onClick={toggle}
+                onClick={() => {
+                  toggle();
+                  controlBurger();
+                }}
                 aria-label={label}
               />
             </ul>
@@ -78,34 +109,19 @@ function Systems() {
           <div className="system_box">
             <p className="boxes_title">Discovery</p>
             <div className="boxess_box">
-              <span>
-                orem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the galley of type and scrambled it to make a
-                type specimen book. It has survived not only five centuries
-              </span>
+              <span>Text</span>
             </div>
           </div>
           <div className="system_box">
             <p className="boxes_title">Vision</p>
             <div className="boxess_box">
-              <span>
-                orem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the galley of type and scrambled it to make a
-                type specimen book. It has survived not only five centuries
-              </span>
+              <span>Text</span>
             </div>
           </div>
           <div className="system_box">
             <p className="boxes_title">Mission</p>
             <div className="boxess_box">
-              <span>
-                orem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the galley of type and scrambled it to make a
-                type specimen book. It has survived not only five centuries
-              </span>
+              <span>Text</span>
             </div>
           </div>
         </div>
