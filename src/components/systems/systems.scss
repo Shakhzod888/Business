@@ -206,11 +206,13 @@
         height: 220px;
         background-color: #fff;
 
-        span {
+        p {
           flex-shrink: 0;
           color: #000;
           text-align: center;
           font-size: 14px;
+          padding-top: 33px;
+          line-height: 22px;
         }
       }
     }
@@ -231,8 +233,13 @@
           height: 200px;
           margin-bottom: 10px;
 
-          span {
-            font-size: 12px;
+          p {
+            flex-shrink: 0;
+            color: #000;
+            text-align: center;
+            font-size: 13px;
+            padding-top: 20px;
+            line-height: 20px;
           }
         }
       }
@@ -273,8 +280,13 @@
           width: 180px;
           height: 180px;
 
-          span {
+          p {
+            flex-shrink: 0;
+            color: #000;
+            text-align: center;
             font-size: 12px;
+            padding-top: 20px;
+            line-height: 20px;
           }
         }
       }
@@ -340,6 +352,18 @@
               gap: 140px;
             }
           }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 725px) {
+    .section_1_header {
+      .header_box {
+        padding: 20px 30px;
+
+        p {
+          font-size: 22px;
         }
       }
     }

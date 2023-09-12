@@ -8,7 +8,6 @@ import Sensor from "../assets/Sensor.png";
 import Light from "../assets/Light.png";
 import Medical from "../assets/Medical.png";
 import Game from "../assets/Game.png";
-import { keyboard } from "@testing-library/user-event/dist/keyboard";
 
 function Systems() {
   const [opened, { toggle }] = useDisclosure(false);
@@ -41,6 +40,7 @@ function Systems() {
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
           </div>
         </div>
 
@@ -56,6 +56,9 @@ function Systems() {
               </li>
               <li className="header_link">
                 <a href="#services">Services</a>
+              </li>
+              <li className="header_link">
+                <a href="#contact">Contact</a>
               </li>
               <Burger
                 color="#fff"
@@ -110,19 +113,34 @@ function Systems() {
           <div className="system_box">
             <p className="boxes_title">Discovery</p>
             <div className="boxess_box">
-              <span>Text</span>
+              <p>
+                orem Ipsum is simply <br /> dummy text of the printing <br />
+                and typesetting industry. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Dolor, totam. <br /> Lorem ipsum dolor sit
+                amet. <br /> Lorem, ipsum dolor.
+              </p>
             </div>
           </div>
           <div className="system_box">
             <p className="boxes_title">Vision</p>
             <div className="boxess_box">
-              <span>Text</span>
+              <p>
+                orem Ipsum is simply <br /> dummy text of the printing <br />
+                and typesetting industry. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Dolor, totam. <br /> Lorem ipsum dolor sit
+                amet. <br /> Lorem, ipsum dolor.
+              </p>
             </div>
           </div>
           <div className="system_box">
             <p className="boxes_title">Mission</p>
             <div className="boxess_box">
-              <span>Text</span>
+              <p>
+                orem Ipsum is simply <br /> dummy text of the printing <br />
+                and typesetting industry. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Dolor, totam. <br /> Lorem ipsum dolor sit
+                amet. <br /> Lorem, ipsum dolor.
+              </p>
             </div>
           </div>
         </div>

@@ -1,0 +1,123 @@
+.section_9 {
+  max-width: 100%;
+  width: 100%;
+  height: 55vh;
+  background: #0f3d3e;
+
+  .footer_container {
+    .footer_text {
+      color: #e2dcc8;
+      font-size: 24px;
+      font-weight: 500;
+      padding-top: 30px;
+    }
+
+    .footer_links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .main_contact {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+
+    .social_links {
+      width: 100%;
+      border-top: solid 2px #e2dcc8;
+      margin-top: 30px;
+      div {
+        display: flex;
+        gap: 20px;
+        margin-top: 10px;
+        float: right;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 990px) {
+    .footer_container {
+      .footer_text {
+        text-align: center;
+      }
+      .footer_links {
+        margin-top: 30px;
+        .main_logo {
+          img {
+            width: 150px;
+            height: 150px;
+          }
+        }
+
+        .security {
+          img {
+            width: 100px;
+          }
+        }
+      }
+      .social_links {
+        margin-top: 60px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 769px) {
+    .footer_container {
+      .footer_links {
+        margin-top: 50px;
+        .main_contact {
+          width: 40px;
+        }
+        .main_logo {
+          img {
+            width: 120px;
+            height: 120px;
+          }
+        }
+
+        .security {
+          img {
+            width: 100px;
+          }
+        }
+      }
+      .social_links {
+        margin-top: 60px;
+        img {
+          width: 45px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .footer_container {
+      .footer_links {
+        .main_logo {
+          img {
+            width: 110px;
+            height: 110px;
+          }
+        }
+
+        .security {
+          img {
+            width: 90px;
+          }
+        }
+      }
+      .social_links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        img {
+          margin-top: 10px;
+          width: 50px;
+        }
+      }
+    }
+  }
+}

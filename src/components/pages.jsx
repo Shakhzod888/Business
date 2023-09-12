@@ -6,6 +6,8 @@ import Applications from "./applications/applications";
 import Facts from "./facts/facts";
 import Plane from "./plane/plane";
 import Works from "./works/works";
+import Contact from "./contact/contact";
+import Footer from "./footer/footer";
 
 function Pages() {
   return (
@@ -18,6 +20,8 @@ function Pages() {
         <Facts />
         <Plane />
         <Works />
+        <Contact />
+        <Footer />
       </div>
     </>
   );

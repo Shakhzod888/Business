@@ -1,6 +1,10 @@
 import React from "react";
 import "../applications/applications.scss";
-import AppImg_1 from "../assets/appImg_1.png";
+import AppImg_1 from "./assets/appImg_1.png";
+import AppImg_2 from "./assets/appImg_2.png";
+import AppImg_3 from "./assets/appImg_3.png";
+import AppImg_4 from "./assets/appImg_4.png";
+import AppImg_5 from "./assets/appImg_5.png";
 
 function Applications() {
   const AppBox = (props) => {
@@ -39,23 +43,23 @@ function Applications() {
   return (
     <div className="section_4">
       <div className="container section_4_container">
-        <p className="text_app">Our Services</p>
+        <p className="text_app">Service Applications</p>
         <div class="app-container">
           <AppBox name="Smart Home" appImg={AppImg_1} />
-          <AppBox name="Health monitor" appImg={AppImg_1} />
-          <AppBox name="Fitness tracking" appImg={AppImg_1} />
-          <AppBox name="Smart Farming" appImg={AppImg_1} />
-          <AppBox name="GPS Sensor" appImg={AppImg_1} />
+          <AppBox name="Health monitor" appImg={AppImg_2} />
+          <AppBox name="Fitness tracking" appImg={AppImg_3} />
+          <AppBox name="Smart Farming" appImg={AppImg_4} />
+          <AppBox name="GPS Sensor" appImg={AppImg_5} />
           <AppBox name="Smart Home" appImg={AppImg_1} />
-          <AppBox name="Health monitor" appImg={AppImg_1} />
-          <AppBox name="Fitness tracking" appImg={AppImg_1} />
-          <AppBox name="Smart Farming" appImg={AppImg_1} />
-          <AppBox name="GPS Sensor" appImg={AppImg_1} />
+          <AppBox name="Health monitor" appImg={AppImg_2} />
+          <AppBox name="Fitness tracking" appImg={AppImg_3} />
+          <AppBox name="Smart Farming" appImg={AppImg_4} />
+          <AppBox name="GPS Sensor" appImg={AppImg_5} />
           <AppBox name="Smart Home" appImg={AppImg_1} />
-          <AppBox name="Health monitor" appImg={AppImg_1} />
-          <AppBox name="Fitness tracking" appImg={AppImg_1} />
-          <AppBox name="Smart Farming" appImg={AppImg_1} />
-          <AppBox name="GPS Sensor" appImg={AppImg_1} />
+          <AppBox name="Health monitor" appImg={AppImg_2} />
+          <AppBox name="Fitness tracking" appImg={AppImg_3} />
+          <AppBox name="Smart Farming" appImg={AppImg_4} />
+          <AppBox name="GPS Sensor" appImg={AppImg_5} />
         </div>
       </div>
     </div>
