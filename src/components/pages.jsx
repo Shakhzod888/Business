@@ -5,6 +5,7 @@ import Services from "./services/services";
 import Applications from "./applications/applications";
 import Facts from "./facts/facts";
 import Plane from "./plane/plane";
+import Works from "./works/works";
 
 function Pages() {
   return (
@@ -16,6 +17,7 @@ function Pages() {
         <Applications />
         <Facts />
         <Plane />
+        <Works />
       </div>
     </>
   );

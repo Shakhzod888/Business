@@ -80,4 +80,309 @@
       }
     }
   }
+
+  @media only screen and (max-width: 991px) {
+    .section_6_container {
+      .plans_boxes {
+        gap: 10px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 930px) {
+    .section_6_container {
+      .text_app {
+        text-align: center;
+      }
+      .plans_boxes {
+        gap: 20px;
+        .plan_box {
+          width: 260px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 850px) {
+    .section_6_container {
+      .plans_boxes {
+        margin-top: 60px;
+        gap: 20px;
+        .plan_box {
+          width: 250px;
+          height: 500px;
+
+          .possibilities {
+            margin-top: 30px;
+            .possib_box {
+              .possibiliti {
+                img {
+                  width: 40px;
+                  height: 40px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 820px) {
+    .section_6_container {
+      .plans_boxes {
+        margin-top: 60px;
+        gap: 30px;
+        .plan_box {
+          width: 220px;
+          height: 500px;
+
+          .possibilities {
+            margin-top: 30px;
+            .possib_box {
+              .possibiliti {
+                img {
+                  width: 40px;
+                  height: 40px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 740px) {
+    .section_6_container {
+      .plans_boxes {
+        margin-top: 60px;
+        gap: 30px;
+        .plan_box {
+          width: 200px;
+          height: 500px;
+
+          .plan_box_title {
+            font-size: 22px;
+          }
+
+          .cost_of_our_plan {
+            p {
+              font-size: 28px;
+            }
+
+            img {
+              width: 45px;
+              height: 45px;
+            }
+          }
+
+          .possibilities {
+            margin-top: 30px;
+            .possib_box {
+              .possibiliti {
+                img {
+                  width: 35px;
+                  height: 35px;
+                }
+
+                p {
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 680px) {
+    height: 85vh;
+    .section_6_container {
+      .plans_boxes {
+        gap: 15px;
+        .plan_box {
+          width: 180px;
+          height: 400px;
+
+          .plan_box_title {
+            font-size: 22px;
+          }
+
+          .cost_of_our_plan {
+            margin-top: 20px;
+            height: 60px;
+            p {
+              font-size: 25px;
+            }
+
+            img {
+              width: 40px;
+              height: 40px;
+            }
+          }
+
+          .possibilities {
+            margin-top: 30px;
+            .possib_box {
+              gap: 25px;
+              .possibiliti {
+                img {
+                  width: 35px;
+                  height: 35px;
+                }
+
+                p {
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 680px) {
+    height: 85vh;
+    .section_6_container {
+      .plans_boxes {
+        gap: 15px;
+        .plan_box {
+          width: 160px;
+          height: 400px;
+
+          .plan_box_title {
+            font-size: 22px;
+          }
+
+          .cost_of_our_plan {
+            margin-top: 20px;
+            height: 60px;
+            p {
+              font-size: 25px;
+            }
+
+            img {
+              width: 40px;
+              height: 40px;
+            }
+          }
+
+          .possibilities {
+            margin-top: 30px;
+            .possib_box {
+              gap: 25px;
+              .possibiliti {
+                img {
+                  width: 30px;
+                  height: 30px;
+                }
+
+                p {
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 540px) {
+    height: auto;
+    margin-bottom: 20px;
+    .section_6_container {
+      .plans_boxes {
+        flex-wrap: wrap;
+        .plan_box {
+          width: 220px;
+          height: 400px;
+
+          .plan_box_title {
+            font-size: 22px;
+          }
+
+          .cost_of_our_plan {
+            margin-top: 20px;
+            height: 60px;
+            p {
+              font-size: 25px;
+            }
+
+            img {
+              width: 40px;
+              height: 40px;
+            }
+          }
+
+          .possibilities {
+            margin-top: 30px;
+            .possib_box {
+              gap: 25px;
+              .possibiliti {
+                img {
+                  width: 30px;
+                  height: 30px;
+                }
+
+                p {
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 490px) {
+    height: auto;
+    margin-bottom: 20px;
+    .section_6_container {
+      .plans_boxes {
+        flex-wrap: wrap;
+        .plan_box {
+          width: 250px;
+          height: 400px;
+
+          .plan_box_title {
+            padding-top: 20px;
+            font-size: 25px;
+          }
+
+          .cost_of_our_plan {
+            margin-top: 30px;
+            height: 60px;
+            p {
+              font-size: 25px;
+            }
+
+            img {
+              width: 40px;
+              height: 40px;
+            }
+          }
+
+          .possibilities {
+            margin-top: 30px;
+            .possib_box {
+              gap: 30px;
+              .possibiliti {
+                img {
+                  width: 30px;
+                  height: 30px;
+                }
+
+                p {
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

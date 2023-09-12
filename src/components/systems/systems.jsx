@@ -23,6 +23,7 @@ function Systems() {
     console.log(event.key);
     if (event.key === "Escape") {
       setOpenBurger(false);
+      toggle();
     }
   });
 
