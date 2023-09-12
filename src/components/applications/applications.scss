@@ -72,6 +72,7 @@
   }
 
   @media only screen and (max-width: 960px) {
+    height: auto;
     .section_4_container {
       .app-container {
         grid-template-columns: repeat(4, 179px);

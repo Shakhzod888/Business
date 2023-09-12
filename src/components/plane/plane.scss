@@ -1,0 +1,83 @@
+.section_6 {
+  max-width: 100%;
+  width: 100%;
+  height: 100vh;
+  .section_6_container {
+    .text_app {
+      font-size: 30px;
+      font-family: sans-serif;
+      padding-top: 30px;
+    }
+
+    .plans_boxes {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 40px;
+
+      .plan_box {
+        width: 290px;
+        height: 562px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: #0f3d3e;
+
+        .plan_box_title {
+          text-align: center;
+          color: #fff;
+          font-weight: 600;
+          font-size: 30px;
+          padding-top: 40px;
+        }
+
+        .cost_of_our_plan {
+          margin-top: 50px;
+          max-width: 100%;
+          width: 100%;
+          height: 90px;
+          background: #3fa796;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+          gap: 10px;
+
+          p {
+            text-align: center;
+            font-size: 32px;
+            font-weight: 600;
+            color: #fff;
+            padding-top: 10px;
+          }
+        }
+
+        .possibilities {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 40px;
+          align-items: center;
+          margin-top: 50px;
+
+          .possib_box {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            .possibiliti {
+              display: flex;
+              gap: 10px;
+
+              p {
+                position: relative;
+                top: 7px;
+                color: #fff;
+                font-size: 20px;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

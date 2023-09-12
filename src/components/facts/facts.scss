@@ -1,0 +1,97 @@
+.section_5 {
+  max-width: 100%;
+  width: 100%;
+  height: 50vh;
+
+  .section_5_container {
+    .text_app {
+      font-size: 30px;
+      font-family: sans-serif;
+      padding-top: 70px;
+    }
+
+    .facts_boxes {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 70px;
+
+      .fact_container {
+        text-align: center;
+
+        p,
+        .countUpNumber {
+          color: #3fa796;
+          font-size: 40px;
+          font-weight: 700;
+          letter-spacing: 2px;
+        }
+
+        span {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 995px) {
+    .section_5_container {
+      .text_app {
+        text-align: center;
+      }
+      .facts_boxes {
+        gap: 20px;
+        .fact_container {
+          span {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .section_5_container {
+      .text_app {
+        text-align: center;
+      }
+      .facts_boxes {
+        gap: 50px;
+        .fact_container {
+          p,
+          .countUpNumber {
+            color: #3fa796;
+            font-size: 40px;
+            font-weight: 700;
+            letter-spacing: 2px;
+          }
+          span {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 440px) {
+    .section_5_container {
+      .text_app {
+        text-align: center;
+        font-size: 25px;
+      }
+      .facts_boxes {
+        gap: 20px;
+        .fact_container {
+          p,
+          .countUpNumber {
+            color: #3fa796;
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: 2px;
+          }
+          span {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+}
